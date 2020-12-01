@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "neo";
+    src: url("fonts/neo.ttf");
+}
+
+:root {
+    /*--main-color: #c0392b;*/
+    --main-color: #5b4834;
+    --secondary-color: #aaa69d;
+}
+
+* {
+    font-family: neo;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+button:focus,
+button:active {
+    outline: none !important;
+    border: inherit !important;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+/* Start side-area */
+#side-area {
+    background: var(--main-color);
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+#side-area h4 {
+    text-align: center;
+}
+
+#side-area ul {
+    margin: 30px 0;
+    list-style: none;
+    padding: 0;
+}
+
+#side-area ul a {
+    color: #FFFFFF;
+}
+
+#side-area i {
+    margin-left: 2px;
+}
+
+#side-area ul li {
+    margin-bottom: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#side-area ul li.active {
+    background: var(--secondary-color);
+}
+
+#side-area ul li a {
+    color: #FFFFFF;
+}
+
+#side-area #articles-menu {
+    margin: 5px 10px;
+}
+/* End side-area */
+
+/* Start Main content */
+.home-stat,
+.main-content {
+    margin: 60px 0;
+    min-height: 514px;
+}
+
+.home-stat h4,
+.main-content h4 {
+    color: var(--main-color);
+}
+
+.home-stat .stat {
+    padding: 20px;
+    font-size: 15px;
+    color: #FFF;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-stat .stat i {
+    position: absolute;
+    font-size: 80px;
+    top: 35px;
+    left: 30px;
+}
+
+.home-stat .stat .info {
+    float: right;
+}
+
+.home-stat .stat span {
+    display: block;
+    font-size: 60px;
+}
+
+.home-stat .stat a {
+    color: #FFF;
+}
+
+.home-stat .stat a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.card-header .toggle-info {
+    color: #999;
+    cursor: pointer;
+}
+
+.card-header .toggle-info:hover {
+    color: #444;
+}
+
+.list-group-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.list-group-item .btns {
+    position: absolute;
+    left: -143px;
+    top: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.list-group-item:hover .btns {
+    left: 8px;
+}
+/* End Main content */
+
+/* Start categories */
+.add-category .btn-custom,
+.add-post .btn-custom {
+    background: var(--main-color);
+    color: #FFFFFF;
+    border: 1px solid var(--main-color);
+    padding: 5px 10px;
+    width: 100px;
+}
+/* End categories */
+
+
+
+
+
+
+
+/* Start Footer */
+/*footer {*/
+/*    color: var(--main-color);*/
+/*    text-align: center;*/
+/*    background: #FFFFFF;*/
+/*    border-top: 1px solid #EAEAEA;*/
+/*    padding: 10px 0;*/
+/*}*/
+/* End Footer */
