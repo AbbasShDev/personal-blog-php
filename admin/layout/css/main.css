@@ -1,12 +1,12 @@
+/* Start general rules */
 @font-face {
     font-family: "neo";
     src: url("fonts/neo.ttf");
 }
 
 :root {
-    /*--main-color: #c0392b;*/
-    --main-color: #5b4834;
-    --secondary-color: #aaa69d;
+    --main-color: #3F64B5;
+    --secondary-color: #273a63b0;
 }
 
 * {
@@ -26,6 +26,29 @@ button:active {
 a, a:hover {
     text-decoration: none;
 }
+/* End general rules */
+
+/* Start notification messages */
+.notify-message {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: #FFFFFF;
+    font-size: 18px;
+    width: 300px;
+    text-align: center;
+    position: fixed;
+    top: 61px;
+    left: -300px;
+    z-index: 9999;
+}
+.manage-categories .alert {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+/* End notification messages */
+
 /* Start side-area */
 #side-area {
     background: var(--main-color);
@@ -151,9 +174,37 @@ a, a:hover {
     padding: 5px 10px;
     width: 100px;
 }
+.display-categories table thead,
+.display-posts table thead {
+    background: var(--main-color) !important;
+    color: #FFFFFF;
+}
+.display-categories table tr th:first-child,
+.display-posts table tr th:first-child {
+    text-align: center;
+}
+.display-categories table thead th:last-child,
+.display-posts table thead th:last-child {
+    text-align: center;
+}
 /* End categories */
-
-
+/* Start edit post modal */
+#edit-post-modal .btn-custom,
+#edit-category-modal .btn-custom {
+    opacity: 0.9;
+    background: var(--main-color);
+    color: #FFFFFF;
+    border: 1px solid var(--main-color);
+}
+#edit-post-modal .btn-custom:hover,
+#edit-category-modal .btn-custom:hover {
+    opacity: 1;
+}
+#edit-post-modal .modal-title,
+#edit-category-modal .modal-title {
+    color: var(--main-color);
+}
+/* End edit post modal */
 
 
 

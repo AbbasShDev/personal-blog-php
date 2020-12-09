@@ -1,2 +1,14 @@
 # To disable or prevent the directory access/listing
 Options -Indexes
+
+# Prevent excution of defained extentions
+<FilesMatch "\.(php|rb|py|txt|sh)$">
+
+Order allow,deny
+
+Deny from all
+
+</FilesMatch>
+
+# Switch of PHP
+php_flag engine off
