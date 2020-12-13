@@ -54,16 +54,6 @@ $categories_count = $categories_num_stat->num_rows;
                                 foreach ($categories as $category): ?>
                                     <li class="list-group-item p-2">
                                         <?php echo $category['category_name']?>
-                                        <div class="float-right btns">
-                                            <a href="members.php?do=Delete&userid" class="confirm btn btn-danger btn-sm">
-                                                <i class="fas fa-backspace"></i>
-                                                حذف
-                                            </a>
-                                            <a href="members.php?do=Edit&userid=" class="btn btn-success btn-sm">
-                                                <i class="fa fa-edit"></i>
-                                                تعديل
-                                            </a>
-                                        </div>
                                     </li>
                             <?php endforeach;}else{
                                 echo '<div class="p-3">لايوجد معلومات لعرضها</div>';
@@ -87,16 +77,6 @@ $categories_count = $categories_num_stat->num_rows;
                                 foreach ($posts as $post): ?>
                                     <li class="list-group-item p-2">
                                         <?php echo $post['post_title']?>
-                                        <div class="float-right btns">
-                                            <a href="members.php?do=Delete&userid" class="confirm btn btn-danger btn-sm">
-                                                <i class="fas fa-backspace"></i>
-                                                حذف
-                                            </a>
-                                            <a href="members.php?do=Edit&userid=" class="btn btn-success btn-sm">
-                                                <i class="fa fa-edit"></i>
-                                                تعديل
-                                            </a>
-                                        </div>
                                     </li>
                                 <?php endforeach;}else{
                                 echo '<div class="p-3">لايوجد معلومات لعرضها</div>';

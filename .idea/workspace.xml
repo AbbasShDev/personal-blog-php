@@ -11,25 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0e5a8ea-8f00-4ccb-a565-3e919e4e9f0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/all_posts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/edit_process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/classes/uploader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/config/errorMessages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/templates/admin_footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/templates/admin_header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/config/errorMessages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/add_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/all_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/all_posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/templates/admin_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/templates/admin_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/templates/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/templates/admin_header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/layout/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/layout/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/.htaccess" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +68,8 @@
       <workItem from="1606658422800" duration="8147000" />
       <workItem from="1606755823611" duration="14859000" />
       <workItem from="1606834584561" duration="4958000" />
-      <workItem from="1607470922808" duration="10294000" />
+      <workItem from="1607470922808" duration="12561000" />
+      <workItem from="1607819991350" duration="1598000" />
     </task>
     <servers />
   </component>

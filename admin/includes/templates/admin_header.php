@@ -56,7 +56,7 @@
                             </a>
                         </ul>
                     </li>
-                    <a href="#">
+                    <a href="http://localhost/abbas-blog/">
                         <li class="">
                             <span><i class="far fa-eye"></i></span>
                             <span>عرض الموقع</span>

@@ -126,7 +126,7 @@ if (isset($_POST['edit-post'])){
                         </div>
                         <div class="form-group">
                             <label for="post-content">نص المقال</label>
-                            <textarea cols="30" rows="10" name="post-content" id="post-content" class="form-control"></textarea>
+                            <textarea name="post-content" id="post-content" class="form-control"></textarea>
                         </div>
 
                 </div>

@@ -145,6 +145,6 @@ if (isset($_POST['delete_category'])){
         </div>
     </div>
 </div>
-<!-- End Main content -->
 
+<!-- End Main content -->
 <?php include_once 'includes/templates/admin_footer.php'; ?>

@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    let ckeEditor = ClassicEditor
+        .create( document.querySelector( '#post-content' ),{
+            language: 'ar'
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+
     //dashboard
     $('.toggle-info').click(function () {
         $(this).children('i').toggleClass(' fa-plus').parents('.card-header').next('.latest-info').slideToggle(350);
@@ -28,7 +36,7 @@ $(document).ready(function () {
                 $('#edit-post-modal #post-id').val(data["id"])
                 $('#edit-post-modal #post-title').val(data["post_title"])
                 $('#edit-post-modal #post-cat').val(data["post_category"])
-                $('#edit-post-modal #post-content').val(data["post_content"])
+                ckeEditor.then( editor => { editor.setData(data["post_content"]);})
             },
             error:function (data){
                 console.log(data);

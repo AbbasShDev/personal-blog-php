@@ -26,6 +26,9 @@ button:active {
 a, a:hover {
     text-decoration: none;
 }
+.ck-editor__editable {
+    height: 300px !important;
+}
 /* End general rules */
 
 /* Start notification messages */
@@ -148,21 +151,6 @@ a, a:hover {
     color: #444;
 }
 
-.list-group-item {
-    overflow: hidden;
-    position: relative;
-}
-
-.list-group-item .btns {
-    position: absolute;
-    left: -143px;
-    top: 5px;
-    transition: all .5s ease-in-out;
-}
-
-.list-group-item:hover .btns {
-    left: 8px;
-}
 /* End Main content */
 
 /* Start categories */
