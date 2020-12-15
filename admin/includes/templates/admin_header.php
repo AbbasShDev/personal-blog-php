@@ -56,7 +56,7 @@
                             </a>
                         </ul>
                     </li>
-                    <a href="http://localhost/abbas-blog/">
+                    <a href="<?php echo $config['main_app_url']?>">
                         <li class="">
                             <span><i class="far fa-eye"></i></span>
                             <span>عرض الموقع</span>

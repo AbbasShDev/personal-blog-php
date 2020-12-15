@@ -1,12 +1,28 @@
-$(document).ready(function () {
 
-    let ckeEditor = ClassicEditor
+$(document).ready(function () {
+    //create cke editor
+    let ckeEditor;
+    ClassicEditor
         .create( document.querySelector( '#post-content' ),{
-            language: 'ar'
+            language: 'ar',
+            link: {
+                // Automatically add target="_blank" and rel="noopener noreferrer" to all external links.
+                addTargetToExternalLinks: true,
+            },
         } )
+        .then( editor => {
+            ckeEditor = editor;
+        })
         .catch( error => {
             console.error( error );
         } );
+
+    //solve confliction between bootstrap and cke editor
+    $( '#edit-post-modal' ).modal( {
+        focus: false,
+        // Do not show modal when innitialized.
+        show: false
+    } );
 
     //dashboard
     $('.toggle-info').click(function () {
@@ -36,7 +52,10 @@ $(document).ready(function () {
                 $('#edit-post-modal #post-id').val(data["id"])
                 $('#edit-post-modal #post-title').val(data["post_title"])
                 $('#edit-post-modal #post-cat').val(data["post_category"])
-                ckeEditor.then( editor => { editor.setData(data["post_content"]);})
+                //Set data to cke editor
+                ckeEditor.setData('');
+                ckeEditor.setData(data["post_content"]);
+
             },
             error:function (data){
                 console.log(data);

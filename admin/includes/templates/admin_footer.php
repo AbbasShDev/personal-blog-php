@@ -17,7 +17,7 @@
 <!-- ckeditor js -->
 <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
 <!-- main js -->
-<script src="<?php echo $config['app_url'];?>layout/js/main.js"></script>
+<script type="module"  src="<?php echo $config['app_url'];?>layout/js/main.js"></script>
 </body>
 </html>
 

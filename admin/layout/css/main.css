@@ -7,6 +7,9 @@
 :root {
     --main-color: #3F64B5;
     --secondary-color: #273a63b0;
+
+    --ck-z-default: 100 !important;
+    --ck-z-modal: calc( var(--ck-z-default) + 99999 ) !important;
 }
 
 * {
