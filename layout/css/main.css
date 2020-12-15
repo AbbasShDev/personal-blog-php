@@ -79,7 +79,12 @@ nav.navbar {
 .post .post-title {
     margin: 10px 0;
     color: var(--main-color);
-
+}
+.post .post-title a {
+    color: var(--main-color);
+}
+.post .post-title h4:hover {
+    text-decoration: underline;
 }
 
 .post .post-details button.btn-custom {
@@ -107,6 +112,16 @@ nav.navbar {
 .post .post-details .post-info span i{
     margin-left: 5px;
 }
+
+.post .post-details .post-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.post .post-details .post-info a:hover {
+    text-decoration: underline;
+}
+
 
 /* End Content */
 
@@ -201,6 +216,7 @@ nav.navbar {
 
 .latest-posts ul li a:hover {
     color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .latest-posts ul li .span-image {

@@ -1,181 +1,71 @@
+<?php
+ob_start();
+session_start();
+$page_title = 'الرئسية';
 
-<!doctype html>
-<html lang="ar" dir="rtl">
+include_once 'includes/config/app.php';
+include_once 'includes/config/database.php';
+include_once 'includes/templates/header.php'
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="AbbasShDev @AbbasShDev">
-<!--    <link rel="icon" type="image/png" href="layout/images/favicon.svg">-->
-    <!-- Fonts -->
-    <link rel="stylesheet" href="layout/css/fonts/neo.ttf">
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
-    <!-- main CSS -->
-    <link rel="stylesheet" href="layout/css/main.css">
-    <title></title>
-</head>
-<body>
-
-<!-- Start navbar  -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-light">
-    <div class="container">
-        <a href="#" class="navbar-brand">تدويناتي</a>
-        <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">عن المدونة</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">شروحات</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">منوعات</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">تواصل معنا</a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- End navbar  -->
+?>
 
 <!-- Start Content  -->
 <div class="content">
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <div class="post">
-                    <div class="post-image">
-                        <img src="layout/images/default-post.png" alt="post image">
+
+                <?php
+                $posts_stat = $mysqli->query('SELECT posts.*, categories.category_name FROM posts INNER JOIN categories ON posts.post_category=categories.id ORDER BY id DESC');
+                $posts = $posts_stat->fetch_all(MYSQLI_ASSOC);
+                foreach ($posts as $post):
+                ?>
+
+                    <div class="post">
+                        <div class="post-image">
+                            <a href="#">
+                                <img src="<?php echo $config['app_url'].$post['post_image'] ?>" alt="post image">
+                            </a>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">
+                                <h4><?php echo $post['post_title'] ?></h4>
+                            </a>
+                        </div>
+                        <div class="post-details">
+                            <p class="post-info">
+                                <span><i class="fas fa-user"></i><?php echo $post['post_author'] ?></span>
+                                <span><i class="far fa-calendar-alt"></i><?php echo $post['post_date'] ?></span>
+                                <span>
+                                    <i class="fas fa-tags"></i>
+                                    <a href="#"><?php echo $post['category_name'] ?></a>
+                                </span>
+                            </p>
+    <!--                        <button class="btn btn-custom">إقرأ المزيد</button>-->
+                        </div>
                     </div>
-                    <div class="post-title">
-                        <h4>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h4>
-                    </div>
-                    <div class="post-details">
-                        <p class="post-info">
-                            <span><i class="fas fa-user"></i>عبدالله محمد</span>
-                            <span><i class="far fa-calendar-alt"></i>29/11/2020</span>
-                            <span><i class="fas fa-tags"></i>بلوجر</span>
-                        </p>
-                        <p>لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد
-                        </p>
-                        <button class="btn btn-custom">إقرأ المزيد</button>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-image">
-                        <img src="layout/images/default-post2.png" alt="post image">
-                    </div>
-                    <div class="post-title">
-                        <h4>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h4>
-                    </div>
-                    <div class="post-details">
-                        <p class="post-info">
-                            <span><i class="fas fa-user"></i>عبدالله محمد</span>
-                            <span><i class="far fa-calendar-alt"></i>29/11/2020</span>
-                            <span><i class="fas fa-tags"></i>بلوجر</span>
-                        </p>
-                        <p>لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد
-                        </p>
-                        <button class="btn btn-custom">إقرأ المزيد</button>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-image">
-                        <img src="layout/images/default-post3.png" alt="post image">
-                    </div>
-                    <div class="post-title">
-                        <h4>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h4>
-                    </div>
-                    <div class="post-details">
-                        <p class="post-info">
-                            <span><i class="fas fa-user"></i>عبدالله محمد</span>
-                            <span><i class="far fa-calendar-alt"></i>29/11/2020</span>
-                            <span><i class="fas fa-tags"></i>بلوجر</span>
-                        </p>
-                        <p>لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد
-                        </p>
-                        <button class="btn btn-custom">إقرأ المزيد</button>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-image">
-                        <img src="layout/images/default-post2.png" alt="post image">
-                    </div>
-                    <div class="post-title">
-                        <h4>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h4>
-                    </div>
-                    <div class="post-details">
-                        <p class="post-info">
-                            <span><i class="fas fa-user"></i>عبدالله محمد</span>
-                            <span><i class="far fa-calendar-alt"></i>29/11/2020</span>
-                            <span><i class="fas fa-tags"></i>بلوجر</span>
-                        </p>
-                        <p>لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد
-                        </p>
-                        <button class="btn btn-custom">إقرأ المزيد</button>
-                    </div>
-                </div>
+
+                <?php endforeach; ?>
             </div>
             <div class="col-md-3">
                 <!-- Start categories -->
                 <div class="categories">
                     <h4 class="mx-auto">
-                        التصنيفات
+                        أحدث التصنيفات
                         <span></span>
                     </h4>
                     <ul>
+                        <?php
+                        $categories_stat = $mysqli->query('SELECT * FROM categories ORDER BY id DESC LIMIT 5');
+                        $categories = $categories_stat->fetch_all(MYSQLI_ASSOC);
+                        foreach ($categories as $category): ?>
                         <a href="">
                             <li>
                                 <span><i class="fas fa-tags"></i></span>
-                                <span>بلوجر</span>
+                                <span><?php echo $category['category_name']?></span>
                             </li>
                         </a>
-                        <a href="">
-                            <li>
-                                <span><i class="fas fa-tags"></i></span>
-                                <span>يوتيوب</span>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li>
-                                <span><i class="fas fa-tags"></i></span>
-                                <span>دورات</span>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li>
-                                <span><i class="fas fa-tags"></i></span>
-                                <span>ويب</span>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li>
-                                <span><i class="fas fa-tags"></i></span>
-                                <span>اندرويد</span>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li>
-                                <span><i class="fas fa-tags"></i></span>
-                                <span>ios</span>
-                            </li>
-                        </a>
-
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!-- End categories -->
@@ -186,24 +76,17 @@
                         <span></span>
                     </h4>
                     <ul>
+                        <?php
+                        $last_posts_stat = $mysqli->query('SELECT * FROM posts ORDER BY id DESC LIMIT 3');
+                        $last_posts = $last_posts_stat->fetch_all(MYSQLI_ASSOC);
+                        foreach ($last_posts as $last_post): ?>
                         <li>
                             <a href="">
-                                <span class="span-image"><img src="layout/images/default-post.png" alt="latest posts image"></span>
-                                <span>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</span>
+                                <span class="span-image"><img src="<?php echo $config['app_url'].$last_post['post_image'] ?>" alt="latest posts image"></span>
+                                <span><?php echo $last_post['post_title'] ?></span>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
-                                <span class="span-image"><img src="layout/images/default-post3.png" alt="latest posts image"></span>
-                                <span>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="span-image"><img src="layout/images/default-post2.png" alt="latest posts image"></span>
-                                <span>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</span>
-                            </a>
-                        </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!-- End latest-posts -->
@@ -212,19 +95,4 @@
     </div>
 </div>
 <!-- End Content  -->
-
-<!-- Start Footer  -->
-<footer>
-    جميع الحقوق محفوظة &copy; 2020
-</footer>
-<!-- End Footer  -->
-<!-- jQuery js -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<!-- Popper.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<!-- Bootstrap js -->
-<script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
-<!-- main js -->
-<script src="layout/js/main.js"></script>
-</body>
-</html>
+<?php include_once 'includes/templates/footer.php' ?>
