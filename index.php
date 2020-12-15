@@ -23,12 +23,12 @@ include_once 'includes/templates/header.php'
 
                     <div class="post">
                         <div class="post-image">
-                            <a href="#">
+                            <a href="<?php echo $config['app_url'];?>article?p_id=<?php echo $post['id'];?>">
                                 <img src="<?php echo $config['app_url'].$post['post_image'] ?>" alt="post image">
                             </a>
                         </div>
                         <div class="post-title">
-                            <a href="#">
+                            <a href="<?php echo $config['app_url'];?>article?p_id=<?php echo $post['id'];?>">
                                 <h4><?php echo $post['post_title'] ?></h4>
                             </a>
                         </div>
@@ -81,7 +81,7 @@ include_once 'includes/templates/header.php'
                         $last_posts = $last_posts_stat->fetch_all(MYSQLI_ASSOC);
                         foreach ($last_posts as $last_post): ?>
                         <li>
-                            <a href="">
+                            <a href="<?php echo $config['app_url'];?>article?p_id=<?php echo $last_post['id'];?>">
                                 <span class="span-image"><img src="<?php echo $config['app_url'].$last_post['post_image'] ?>" alt="latest posts image"></span>
                                 <span><?php echo $last_post['post_title'] ?></span>
                             </a>

@@ -11,11 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0e5a8ea-8f00-4ccb-a565-3e919e4e9f0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/templates/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/templates/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/templates/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/layout/css/main.css" afterDir="false" />
     </list>
@@ -78,7 +76,8 @@
       <workItem from="1607819991350" duration="1766000" />
       <workItem from="1607821963344" duration="942000" />
       <workItem from="1607823262945" duration="280000" />
-      <workItem from="1607996832261" duration="8759000" />
+      <workItem from="1607996832261" duration="8950000" />
+      <workItem from="1608055591478" duration="3618000" />
     </task>
     <servers />
   </component>
@@ -98,10 +97,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="311" key="NewPhpFileDialog" timestamp="1608005031970">
+    <state x="460" y="311" key="NewPhpFileDialog" timestamp="1608055641625">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
-    <state x="460" y="311" key="NewPhpFileDialog/0.25.1280.725@0.25.1280.725" timestamp="1608005031970" />
+    <state x="460" y="311" key="NewPhpFileDialog/0.25.1280.725@0.25.1280.725" timestamp="1608055641625" />
+    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup" timestamp="1608056304880">
+      <screen x="0" y="25" width="1280" height="725" />
+    </state>
+    <state x="305" y="74" width="670" height="676" key="search.everywhere.popup/0.25.1280.725@0.25.1280.725" timestamp="1608056304880" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

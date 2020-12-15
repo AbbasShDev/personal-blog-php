@@ -229,6 +229,56 @@ nav.navbar {
     height: 60px;
 }
 /* End side-bar */
+
+/* Start article */
+.content.article-content {
+    margin-top: 20px !important;
+}
+.content .article {
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+
+.article .article-info {
+    color: var(--secondary-color);
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.article .article-info a {
+    color: var(--secondary-color);
+}
+.article .article-info a:hover {
+    text-decoration: underline;
+}
+
+.article .article-title {
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.article .article-author {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.article .article-image {
+    width: 100%;
+}
+
+.article .article-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.article .article-content {
+    margin-top: 50px;
+}
+
+.article .article-content p {
+    font-size: 20px;
+}
+/* End article */
 /* Start Footer */
 footer {
     color: var(--main-color);
