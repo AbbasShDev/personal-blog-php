@@ -34,7 +34,7 @@
                     <a href="#" class="nav-link">عن المدونة</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">التصنيفات</a>
+                    <a href="<?php echo $config['app_url'];?>categories" class="nav-link">التصنيفات</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">تواصل معنا</a>

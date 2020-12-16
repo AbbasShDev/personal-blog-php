@@ -13,7 +13,7 @@ include_once 'includes/templates/header.php'
 <div class="content">
     <div class="container">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-9 order-2 order-md-0">
 
                 <?php
                 $posts_stat = $mysqli->query('SELECT posts.*, categories.category_name FROM posts INNER JOIN categories ON posts.post_category=categories.id ORDER BY id DESC');
@@ -47,28 +47,7 @@ include_once 'includes/templates/header.php'
 
                 <?php endforeach; ?>
             </div>
-            <div class="col-md-3">
-                <!-- Start categories -->
-                <div class="categories">
-                    <h4 class="mx-auto">
-                        أحدث التصنيفات
-                        <span></span>
-                    </h4>
-                    <ul>
-                        <?php
-                        $categories_stat = $mysqli->query('SELECT * FROM categories ORDER BY id DESC LIMIT 5');
-                        $categories = $categories_stat->fetch_all(MYSQLI_ASSOC);
-                        foreach ($categories as $category): ?>
-                        <a href="<?php echo $config['app_url'];?>category?c_id=<?php echo $category['id'];?>">
-                            <li>
-                                <span><i class="fas fa-tags"></i></span>
-                                <span><?php echo $category['category_name']?></span>
-                            </li>
-                        </a>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-                <!-- End categories -->
+            <div class="col-md-3 order-0 order-md-1">
                 <!-- Start latest-posts-->
                 <div class="latest-posts">
                     <h4 class="mx-auto">
@@ -90,6 +69,27 @@ include_once 'includes/templates/header.php'
                     </ul>
                 </div>
                 <!-- End latest-posts -->
+                <!-- Start categories -->
+                <div class="categories">
+                    <h4 class="mx-auto">
+                        أحدث التصنيفات
+                        <span></span>
+                    </h4>
+                    <ul>
+                        <?php
+                        $categories_stat = $mysqli->query('SELECT * FROM categories ORDER BY id DESC LIMIT 5');
+                        $categories = $categories_stat->fetch_all(MYSQLI_ASSOC);
+                        foreach ($categories as $category): ?>
+                            <a href="<?php echo $config['app_url'];?>category?c_id=<?php echo $category['id'];?>">
+                                <li>
+                                    <span><i class="fas fa-tags"></i></span>
+                                    <span><?php echo $category['category_name']?></span>
+                                </li>
+                            </a>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <!-- End categories -->
             </div>
         </div>
     </div>
