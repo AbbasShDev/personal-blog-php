@@ -24,7 +24,7 @@ if (isset($_GET) && isset($_GET['p_id']) && is_numeric($_GET['p_id'])){
         <div class="content article-content">
             <div class="container col-12 col-md-9">
                 <div class="article">
-                    <p class="text-left article-info"><?php echo $post['post_date'] ?> /  <a href="#">#<?php echo $post['category_name'] ?></a></p>
+                    <p class="text-left article-info"><?php echo $post['post_date'] ?> /  <a href="<?php echo $config['app_url'];?>category?c_id=<?php echo $post['post_category'];?>"">#<?php echo $post['category_name'] ?></a></p>
                     <h1 class="text-left article-title"><?php echo $post['post_title'] ?></h1>
                     <p class="text-left article-author"><i class="fas fa-user"></i> <?php echo $post['post_author'] ?></p>
                     <div class="article-image">

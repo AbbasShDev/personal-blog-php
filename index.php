@@ -38,7 +38,7 @@ include_once 'includes/templates/header.php'
                                 <span><i class="far fa-calendar-alt"></i><?php echo $post['post_date'] ?></span>
                                 <span>
                                     <i class="fas fa-tags"></i>
-                                    <a href="#"><?php echo $post['category_name'] ?></a>
+                                    <a href="<?php echo $config['app_url'];?>category?c_id=<?php echo $post['post_category'];?>"><?php echo $post['category_name'] ?></a>
                                 </span>
                             </p>
     <!--                        <button class="btn btn-custom">إقرأ المزيد</button>-->
@@ -59,7 +59,7 @@ include_once 'includes/templates/header.php'
                         $categories_stat = $mysqli->query('SELECT * FROM categories ORDER BY id DESC LIMIT 5');
                         $categories = $categories_stat->fetch_all(MYSQLI_ASSOC);
                         foreach ($categories as $category): ?>
-                        <a href="">
+                        <a href="<?php echo $config['app_url'];?>category?c_id=<?php echo $category['id'];?>">
                             <li>
                                 <span><i class="fas fa-tags"></i></span>
                                 <span><?php echo $category['category_name']?></span>
