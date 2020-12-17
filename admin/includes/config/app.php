@@ -2,7 +2,7 @@
 
 $config = [
 
-    'app_name' => 'تدويناتي | ',
+    'app_name' => 'مدونتي | ',
     'main_app_url' => 'http://localhost/abbas-blog/',
     'app_url' => 'http://localhost/abbas-blog/admin/',
     'admin_email' => 'admin@blog.com',

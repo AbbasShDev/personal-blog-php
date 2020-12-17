@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ar" dir="rtl">
 
@@ -23,7 +22,7 @@
 <!-- Start navbar  -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-light">
     <div class="container">
-        <a href="<?php echo $config['app_url'];?>" class="navbar-brand">تدويناتي</a>
+        <a href="<?php echo $config['app_url'];?>" class="navbar-brand">مدونتي</a>
         <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,13 +30,13 @@
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">عن المدونة</a>
+                    <a href="<?php echo $config['app_url'];?>about" class="nav-link">عن المدونة</a>
                 </li>
                 <li class="nav-item">
                     <a href="<?php echo $config['app_url'];?>categories" class="nav-link">التصنيفات</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">تواصل معنا</a>
+                    <a href="<?php echo $config['app_url'];?>contact-us" class="nav-link">تواصل معنا</a>
                 </li>
 
             </ul>
