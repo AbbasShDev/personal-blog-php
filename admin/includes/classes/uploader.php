@@ -48,7 +48,11 @@ class Uploader
     public function upload()
     {
 
-        $this->fileName = time() . $this->file['name'];
+        $file_name_array = explode(".", $this->file['name']);
+
+        $extension = end($file_name_array);
+        $this->fileName = bin2hex(random_bytes(16)) . '.' . $extension;
+
         $this->filePath .= '/' . $this->fileName;
 
 
@@ -97,4 +101,7 @@ class Uploader
         return true;
     }
 
+
+
 }
+//

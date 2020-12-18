@@ -1,21 +1,10 @@
 
 $(document).ready(function () {
     //create cke editor
-    let ckeEditor;
-    ClassicEditor
-        .create( document.querySelector( '#post-content' ),{
-            language: 'ar',
-            link: {
-                // Automatically add target="_blank" and rel="noopener noreferrer" to all external links.
-                addTargetToExternalLinks: true,
-            },
-        } )
-        .then( editor => {
-            ckeEditor = editor;
-        })
-        .catch( error => {
-            console.error( error );
-        } );
+    CKEDITOR.replace( 'post-content', {
+        height: 300,
+        filebrowserUploadUrl: "editor_upload.php",
+    });
 
     //solve confliction between bootstrap and cke editor
     $( '#edit-post-modal' ).modal( {
@@ -53,9 +42,7 @@ $(document).ready(function () {
                 $('#edit-post-modal #post-title').val(data["post_title"])
                 $('#edit-post-modal #post-cat').val(data["post_category"])
                 //Set data to cke editor
-                ckeEditor.setData('');
-                ckeEditor.setData(data["post_content"]);
-
+                CKEDITOR.instances['post-content'].setData(data["post_content"])
             },
             error:function (data){
                 console.log(data);

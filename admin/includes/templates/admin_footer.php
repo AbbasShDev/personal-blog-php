@@ -15,9 +15,9 @@
 <!-- Bootstrap js -->
 <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
 <!-- ckeditor js -->
-<script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+<script src="http://cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
 <!-- main js -->
-<script type="module"  src="<?php echo $config['app_url'];?>layout/js/main.js"></script>
+<script src="<?php echo $config['app_url'];?>layout/js/main.js"></script>
 </body>
 </html>
 

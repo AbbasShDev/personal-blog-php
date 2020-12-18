@@ -62,6 +62,12 @@
                             <span>عرض الموقع</span>
                         </li>
                     </a>
+                    <a href="<?php echo $config['app_url']?>settings">
+                        <li class="<?php if ($page_title == 'الإعدادات') {echo 'active';}else{echo '';} ?>">
+                            <span><i class="fas fa-cog"></i></span>
+                            <span>الإعدادات</span>
+                        </li>
+                    </a>
                     <a href="#">
                         <li class="">
                             <span><i class="fas fa-trash-alt"></i></span>

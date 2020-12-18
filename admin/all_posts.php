@@ -112,7 +112,7 @@ if (isset($_POST['edit-post'])){
                             <label for="post-cat">التصنيف</label>
                             <select name="post-cat" id="post-cat" class="custom-select">
                                 <?php
-                                $cat_stat = $mysqli->query('SELECT * FROM categories');
+                                $cat_stat = $mysqli->query('SELECT * FROM categories ORDER BY id DESC');
                                 $categories = $cat_stat->fetch_all(MYSQLI_ASSOC);
                                 foreach ($categories as $category): ?>
                                     <option value="<?php echo $category['id']; ?>"><?php echo $category['category_name']; ?></option>
