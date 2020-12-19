@@ -1,3 +1,12 @@
+<?php
+
+if (!isset($_SESSION['user_id'] )){
+    header("location: login");
+    die();
+}
+
+?>
+
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -25,7 +34,7 @@
                 <h4>لوحة التحكم</h4>
                 <ul>
                     <a href="<?php echo $config['app_url'];?>">
-                        <li class="<?php if ($page_title == 'الرئسية') {echo 'active';}else{echo '';} ?>">
+                        <li class="<?php if ($page_title == 'لوحة التحكم') {echo 'active';}else{echo '';} ?>">
                             <span><i class="fas fa-tachometer-alt"></i></span>
                             <span>الرئسية</span>
                         </li>
@@ -68,7 +77,7 @@
                             <span>الإعدادات</span>
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="<?php echo $config['app_url']?>logout">
                         <li class="">
                             <span><i class="fas fa-trash-alt"></i></span>
                             <span>تسجيل الخروح</span>

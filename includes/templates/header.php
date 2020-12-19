@@ -29,6 +29,7 @@
 
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item">
                     <a href="<?php echo $config['app_url'];?>about" class="nav-link">عن المدونة</a>
                 </li>
@@ -38,6 +39,12 @@
                 <li class="nav-item">
                     <a href="<?php echo $config['app_url'];?>contact-us" class="nav-link">تواصل معنا</a>
                 </li>
+
+                <?php if (isset($_SESSION['user_id'] )){ ?>
+                    <li class="nav-item admin">
+                        <a href="<?php echo $config['app_url'];?>admin" class="nav-link text-center">لوحة التحكم</a>
+                    </li>
+                <?php } ?>
 
             </ul>
         </div>

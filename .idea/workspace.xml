@@ -11,13 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0e5a8ea-8f00-4ccb-a565-3e919e4e9f0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/templates/admin_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/templates/admin_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/templates/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/templates/admin_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/layout/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/templates/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/templates/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layout/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/layout/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/posts_image/1606837117unnamed.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +53,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,10 +61,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.29444444" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/admin/ckfinder" />
       <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$/includes" />
     </key>
@@ -82,7 +92,18 @@
       <workItem from="1608055591478" duration="3679000" />
       <workItem from="1608083111531" duration="4722000" />
       <workItem from="1608144189757" duration="3243000" />
-      <workItem from="1608163400090" duration="1206000" />
+      <workItem from="1608163400090" duration="2554000" />
+      <workItem from="1608175214071" duration="4715000" />
+      <workItem from="1608180355158" duration="1611000" />
+      <workItem from="1608182020225" duration="3611000" />
+      <workItem from="1608186842607" duration="3910000" />
+      <workItem from="1608229439899" duration="4215000" />
+      <workItem from="1608248186185" duration="3740000" />
+      <workItem from="1608318791082" duration="522000" />
+      <workItem from="1608319589874" duration="293000" />
+      <workItem from="1608319979791" duration="467000" />
+      <workItem from="1608320672184" duration="1087000" />
+      <workItem from="1608336058725" duration="3823000" />
     </task>
     <servers />
   </component>
@@ -102,14 +123,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="311" key="NewPhpFileDialog" timestamp="1608164274102">
+    <state x="325" y="25" key="#PHP" timestamp="1608180306721">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
-    <state x="460" y="311" key="NewPhpFileDialog/0.25.1280.725@0.25.1280.725" timestamp="1608164274102" />
+    <state x="325" y="25" key="#PHP/0.25.1280.725@0.25.1280.725" timestamp="1608180306721" />
+    <state x="566" y="311" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1608320627256">
+      <screen x="0" y="25" width="1280" height="725" />
+    </state>
+    <state x="566" y="311" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.25.1280.725@0.25.1280.725" timestamp="1608320627256" />
+    <state x="460" y="311" key="NewPhpFileDialog" timestamp="1608337600849">
+      <screen x="0" y="25" width="1280" height="725" />
+    </state>
+    <state x="460" y="311" key="NewPhpFileDialog/0.25.1280.725@0.25.1280.725" timestamp="1608337600849" />
+    <state x="321" y="25" width="900" height="725" key="SettingsEditor" timestamp="1608321682572">
+      <screen x="0" y="25" width="1280" height="725" />
+    </state>
+    <state x="321" y="25" width="900" height="725" key="SettingsEditor/0.25.1280.725@0.25.1280.725" timestamp="1608321682572" />
     <state x="305" y="74" width="670" height="676" key="search.everywhere.popup" timestamp="1608056304880">
       <screen x="0" y="25" width="1280" height="725" />
     </state>
     <state x="305" y="74" width="670" height="676" key="search.everywhere.popup/0.25.1280.725@0.25.1280.725" timestamp="1608056304880" />
+    <state x="369" y="224" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608235173569">
+      <screen x="0" y="25" width="1280" height="725" />
+    </state>
+    <state x="369" y="224" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.25.1280.725@0.25.1280.725" timestamp="1608235173569" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -117,6 +154,11 @@
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/index.php</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/ckfinder/config.php</url>
+          <line>71</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

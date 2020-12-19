@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-$page_title = 'الرئسية';
+$page_title = 'لوحة التحكم';
 
 include_once 'includes/config/app.php';
 include_once 'includes/config/database.php';

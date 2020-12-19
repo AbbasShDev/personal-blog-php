@@ -26,12 +26,14 @@ if (isset($_GET) && isset($_GET['c_id']) && is_numeric($_GET['c_id'])){
         </div>
         <div class="content category-content">
             <div class="container col-12 col-sm-12 col-md-10 col-lg-8">
+                <?php
+                $posts_stat = $mysqli->prepare('SELECT * FROM posts WHERE post_category=? ORDER BY id DESC');
+                $posts_stat->bind_param('i',$category_id);
+                $posts_stat->execute();
+                $posts = $posts_stat->get_result()->fetch_all(MYSQLI_ASSOC);
+                if (!empty($posts)){ ?>
                 <ul>
                     <?php
-                    $posts_stat = $mysqli->prepare('SELECT * FROM posts WHERE post_category=? ORDER BY id DESC');
-                    $posts_stat->bind_param('i',$category_id);
-                    $posts_stat->execute();
-                    $posts = $posts_stat->get_result()->fetch_all(MYSQLI_ASSOC);
                     foreach ($posts as $post): ?>
                         <li>
                             <a href="<?php echo $config['app_url'];?>article?p_id=<?php echo $post['id'];?>">
@@ -57,6 +59,12 @@ if (isset($_GET) && isset($_GET['c_id']) && is_numeric($_GET['c_id'])){
                         </li>
                     <?php endforeach; ?>
                 </ul>
+            <?php }else{?>
+
+                        <h3 class="text-center pt-5" ><i class="fas fa-exclamation-circle fa-2x"></i></h3>
+                    <h3 class="text-center pt-2">لايوجد منشورات خاصة بهذا التصنيف</h3>
+
+            <?php } ?>
             </div>
         </div>
         <!-- End Content  -->
