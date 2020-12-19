@@ -11,19 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0e5a8ea-8f00-4ccb-a565-3e919e4e9f0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/templates/admin_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/templates/admin_footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/templates/admin_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/templates/admin_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/layout/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/layout/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/settings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/templates/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/layout/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/posts_image/1606837117unnamed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/categories.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +93,8 @@
       <workItem from="1608319589874" duration="293000" />
       <workItem from="1608319979791" duration="467000" />
       <workItem from="1608320672184" duration="1087000" />
-      <workItem from="1608336058725" duration="3823000" />
+      <workItem from="1608336058725" duration="4102000" />
+      <workItem from="1608351689828" duration="1166000" />
     </task>
     <servers />
   </component>

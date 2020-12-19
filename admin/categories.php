@@ -31,7 +31,8 @@ if (isset($_POST['add-category'])){
 
 
     if (!count($errors)){
-        $stat = $mysqli->prepare('INSERT INTO categories (category_name) VALUES(?)');
+        $Today_date  = date("Y-m-d");
+        $stat = $mysqli->prepare("INSERT INTO categories (category_name, created_at) VALUES(?, '$Today_date')");
         $stat->bind_param('s', $cat_name);
 
         if ($stat->execute()){

@@ -42,8 +42,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
         }
 
         if (!count($errors)){
-            $stat = $mysqli->prepare('INSERT INTO posts (post_title, post_category, post_content, post_image) VALUES(?,?,?,?)');
-            $stat->bind_param('siss', $post_title, $post_category, $post_content, $filePath);
+            $Today_date  = date("Y-m-d");
+            $stat = $mysqli->prepare("INSERT INTO posts (post_title, post_category, post_content, post_image, post_date) VALUES(?,?,?,?, '$Today_date')");
+            $stat->bind_param('siss', $post_title, $post_category, $post_content, $filePath );
 
             if ($stat->execute()){
                 $_SESSION['notify_message'] = 'تم إضافة المقال';
