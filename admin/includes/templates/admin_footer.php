@@ -21,7 +21,7 @@
 <!-- Bootstrap js -->
 <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
 <!-- ckeditor js -->
-<script src="http://cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
+<script src="<?php echo $config['app_url'];?>layout/js/ckeditor/ckeditor.js"></script>
 <!-- main js -->
 <script src="<?php echo $config['app_url'];?>layout/js/main.js"></script>
 </body>
