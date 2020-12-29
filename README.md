@@ -13,3 +13,14 @@
 - صفحة التحكم بالمقالات، إضافة - تعديل - حذف.
 - صفحة التحكم بالتصنيفات، إضافة - تعديل - حذف.
 - صفحة التحكم بإعدادات الموقع ، اسم الموقع - اسم كاتب المقالات - إيميل الآدمن.
+
+
+# DON'T FORGET TO FOLLOW ME ON
+
+<ul>        
+  <li><a href="https://twitter.com/AbbasShDev" target="_blank">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/in/abbas-alshaqaq/" target="_blank">Linkedin</a></li>
+</ul>
+
+# ملاحضة
+جميع المقلات منقولة من مصادر مختلفة ويوجد الرابط الاصلي في كل مقال
