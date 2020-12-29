@@ -14,6 +14,19 @@
 - صفحة التحكم بالتصنيفات، إضافة - تعديل - حذف.
 - صفحة التحكم بإعدادات الموقع ، اسم الموقع - اسم كاتب المقالات - إيميل الآدمن.
 
+# Demo
+
+<p>https://blo0ogy.000webhostapp.com/</p>
+
+<ol>
+  <li>
+    <strong>admin (https://blo0ogy.000webhostapp.com/admin/)</strong>
+      <ul>
+          <li>Email: admin@modaonaty.com /li>
+          <li>Password: 111111</li>
+      </ul>
+ </li>
+</ol>
 
 # DON'T FORGET TO FOLLOW ME ON
 
