@@ -22,7 +22,7 @@
   <li>
     <strong>admin (https://blo0ogy.000webhostapp.com/admin/)</strong>
       <ul>
-          <li>Email: admin@modaonaty.com /li>
+          <li>Email: admin@modaonaty.com </li>
           <li>Password: 111111</li>
       </ul>
  </li>
